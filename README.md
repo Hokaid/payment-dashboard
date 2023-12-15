@@ -1,46 +1,54 @@
-# Getting Started with Create React App
+# Payment Transaction Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is a prototype of a payment transaction dashboard built using React.js and TypeScript. The dashboard allows users to view a list of payment transactions, filter transactions by date range, implement pagination, sorting, and display a summary section with total transactions and amount.
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/payment-dashboard.git
+   cd payment-dashboard
+   ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+3. **Run the Application:**
+   ```bash
+   npm start
+   ```
 
-### `npm test`
+Open [http://localhost:3000](http://localhost:3000) in your web browser to view the application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
 
-### `npm run build`
+- **src/**
+  - **api.ts:** Mock API for fetching payment transaction data.
+  - **types.ts:** TypeScript types/interfaces used in the project.
+  - **components/**
+    - **TransactionList.tsx:** Main component displaying payment transactions with filtering, sorting, pagination, and summary.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Display a list of payment transactions.
+- Filter transactions by date range.
+- Implement pagination to show a limited number of transactions per page.
+- Add sorting functionality by date or amount.
+- Create a summary section displaying total transactions and total transaction amount within the selected date range.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Dependencies
 
-### `npm run eject`
+- React.js
+- TypeScript
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Additional Notes
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- The project uses inline styles for simplicity. You may choose to integrate a CSS framework or use external stylesheets for more advanced styling.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Contributing
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions are welcome! Feel free to open issues or pull requests for any improvements or bug fixes.
